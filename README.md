@@ -1,5 +1,7 @@
 # 山下 健一 | Ken-ichi Yamashita
 
+**▶ サイトを開く: [https://ken1yama.github.io/](https://ken1yama.github.io/)**
+
 GitHub Pages で公開する研究者ホームページです(静的サイト。ビルドは不要。HTML を直接編集します)。
 
 | ファイル | 内容 |
@@ -16,4 +18,4 @@ GitHub Pages で公開する研究者ホームページです(静的サイト。
 | `assets/` | 画像(`ga/` Graphical Abstract、`cover/` 表紙、`photo.jpg` 写真)、分子表示(`hero.js`, `molecules.js`) |
 
 ## 公開
-`ken1yama.github.io` リポジトリに、このフォルダの中身を置き、Settings → Pages で Branch を `main` / `(root)` にします。
+公開済みです: https://ken1yama.github.io/ 。このリポジトリの `main` ブランチ(`/ (root)`)から、GitHub Pages で配信しています。ファイルを更新して push すると、数分で反映されます。
