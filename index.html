@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>山下 健一 | Ken-ichi Yamashita</title>
+  <meta name="description" content="大阪大学 大学院理学研究科 化学専攻 講師 山下健一のページ。ポルフィリンを中心とするπ電子系の研究紹介、論文リスト、連絡先。">
+  <link rel="canonical" href="https://ken1yama.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="山下 健一 | Ken-ichi Yamashita">
+  <meta property="og:title" content="山下 健一 | Ken-ichi Yamashita">
+  <meta property="og:description" content="大阪大学 大学院理学研究科 化学専攻 講師 山下健一のページ。ポルフィリンを中心とするπ電子系の研究紹介、論文リスト、連絡先。">
+  <meta property="og:url" content="https://ken1yama.github.io/">
+  <meta property="og:image" content="https://ken1yama.github.io/assets/og.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#15103a">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "山下 健一", "alternateName": "Ken-ichi Yamashita", "url": "https://ken1yama.github.io/", "jobTitle": "講師 (Associate Professor)", "affiliation": {"@type": "CollegeOrUniversity", "name": "大阪大学 大学院理学研究科 化学専攻", "alternateName": "Department of Chemistry, Graduate School of Science, The University of Osaka"}, "sameAs": ["https://orcid.org/0000-0001-7270-1234", "https://researchmap.jp/ken1-yamashi", "https://www.scopus.com/authid/detail.uri?authorId=35792834600", "https://github.com/ken1yama", "https://bsky.app/profile/ken1yama.bsky.social"]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">山下 健一 / Ken-ichi Yamashita</a>
+      <nav><a href="index.html" aria-current="page">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="gallery.html">Gallery</a><a href="activities.html">Activities</a><a href="cv.html">CV</a><a href="software.html">Software</a><a href="links.html">Links</a></nav>
+    </div>
+  </header>
+  <div class="hero-band cover">
+    <canvas id="mol" aria-hidden="true"></canvas>
+    <div class="wrap hero-grid">
+    <section class="hero">
+      <img class="photo" src="assets/photo.jpg" alt="プロフィール写真" width="160" height="160">
+      <div>
+        <h1>山下 健一 <span class="en">Ken-ichi Yamashita</span></h1>
+        <p class="role">大阪大学 大学院理学研究科 化学専攻 講師<br><a href="https://www.chem.sci.osaka-u.ac.jp/lab/saito/" target="_blank" rel="noopener">機能分子材料研究室</a>(旧 物性有機化学研究室)<br>Associate Professor, Department of Chemistry, Graduate School of Science, The University of Osaka</p>
+        <p class="links">
+          <a class="mail" href="#contact" data-u="yamashita-k" data-d="chem.sci.osaka-u.ac.jp">Email</a>
+          <a href="https://researchmap.jp/ken1-yamashi">researchmap</a>
+          <a href="https://orcid.org/0000-0001-7270-1234">ORCID</a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=35792834600">Scopus</a>
+          <a href="https://www.webofscience.com/wos/author/record/1129776">Web of Science</a>
+          <a href="https://nrid.nii.ac.jp/ja/nrid/1000040468145/">KAKEN</a>
+          <a href="https://github.com/ken1yama">GitHub</a>
+          <a href="https://bsky.app/profile/ken1yama.bsky.social">Bluesky</a>
+        </p>
+      </div>
+    </section>
+    </div>
+    <p class="wrap cover-caption"><span id="mol-name"></span><button type="button" id="mol-next" aria-label="別の分子を表示" title="別の分子を表示">↻</button><button type="button" id="mol-pause" aria-pressed="false" aria-label="分子の動きを止める" title="分子の動きを止める / 動かす"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path class="i-pause" d="M2.5 2h2.4v8H2.5zM7.1 2h2.4v8H7.1z"/><path class="i-play" d="M3 1.6l7.2 4.4L3 10.4z"/></svg></button></p>
+  </div>
+  <script src="assets/molecules.js" defer></script>
+  <script src="assets/hero.js" defer></script>
+  <main class="wrap">
+
+
+    <section>
+      <h2>About</h2>
+      <p>ポルフィリンとその類縁体(ポルフィリノイド)を共通の土台に、自ら見いだした合成手法を出発点として、既存の方法では得られないπ電子系を「つくり」、その特異な電子状態から光・電子・磁気の性質を「引き出す」研究を進めています。有機化学・錯体化学・超分子化学にまたがる分野です。</p>
+      <p class="keywords"><span>ポルフィリン</span><span>反芳香族性</span><span>積層π電子系</span><span>近赤外吸収</span><span>酸化還元</span><span>希土類錯体</span><span>白金錯体</span><span>光触媒</span><span>分子認識</span><span>光スイッチ</span></p>
+    </section>
+
+    <section>
+      <h2>Research Topics</h2>
+      <ul class="topics">
+        <li><a href="research.html#synthesis">ポルフィリンを自在に修飾する合成法</a><span>触媒を使わずに温和な条件で原子・官能基を導入する手法の開発。</span></li>
+        <li><a href="research.html#antiaromatic">反芳香族π電子系</a><span>不安定な反芳香族分子を分子設計で安定に取り出し、構造との関係を調べる。</span></li>
+        <li><a href="research.html#double-decker">希土類ダブルデッカー錯体</a><span>積層型錯体の酸化状態と分子構造の関係。</span></li>
+        <li><a href="research.html#quinoid">非芳香族キノイド型π電子系</a><span>芳香族性をあえて崩したキノイド型分子と、ポリアニリン型多量体。</span></li>
+        <li><a href="research.html#platinum">白金ポルフィリン</a><span>温和な合成法から光触媒・発光材料へ。</span></li>
+        <li><a href="research.html#cofacial">対面型ポルフィリン二量体</a><span>分子認識と、見分けにくい分子の識別・分離。</span></li>
+        <li><a href="research.html#thiophene">チオフェン系π共役分子</a><span>立体構造の制御と、光で切り替わる多状態スイッチ。</span></li>
+      </ul>
+      <p><a href="research.html">研究紹介のページへ →</a></p>
+    </section>
+
+    <section>
+      <h2>News</h2>
+      <dl class="timeline">
+        <dt>2026.08.17</dt><dd><strong>分子認識</strong>:対面型ポルフィリン二量体による置換ピラジン類の包接と異性体識別の論文が、<em>Dalton Trans.</em> に掲載されました。<a href="publications.html#pub-55">論文リスト</a></dd>
+        <dt>2026.07.17</dt><dd><strong>光スイッチ</strong>:チオフェン系蛍光分子の多状態光スイッチングの論文が、<em>Chem. Eur. J.</em> に掲載されました。<a href="publications.html#pub-54">論文リスト</a></dd>
+        <dt>2026.06</dt><dd>ICPP-14(京都)で招待講演を行いました。</dd>
+      </dl>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>大阪大学 大学院理学研究科 化学専攻 講師<br>
+      <a href="https://www.chem.sci.osaka-u.ac.jp/lab/saito/" target="_blank" rel="noopener">機能分子材料研究室</a>(旧 物性有機化学研究室)<br>
+      〒560-0043 大阪府豊中市待兼山町1-1 理学部G棟405室<br>
+      Email: <span class="mail" data-u="yamashita-k" data-d="chem.sci.osaka-u.ac.jp">yamashita-k [at] chem.sci.osaka-u.ac.jp</span></p>
+    </section>
+    <script>
+    // The address is assembled here, so it never appears as plain text in the page source.
+    document.querySelectorAll('.mail').forEach(function (el) {
+      var addr = el.dataset.u + '@' + el.dataset.d;
+      if (el.tagName === 'A') { el.href = 'mailto:' + addr; return; }
+      var a = document.createElement('a');
+      a.href = 'mailto:' + addr; a.textContent = addr;
+      el.replaceWith(a);
+    });
+    </script>
+
+  </main>
+  <footer class="wrap">
+    <small>&copy; 2026 Ken-ichi Yamashita. Last updated: 2026-11-25.</small>
+  </footer>
+  <script>
+  // phone: the menu is one scrolling row; bring the current page's link into view
+  (function () {
+    var c = document.querySelector('.site-header nav [aria-current]'), n = c && c.parentNode;
+    if (n && n.scrollWidth > n.clientWidth) n.scrollLeft = c.offsetLeft - (n.clientWidth - c.offsetWidth) / 2;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software | 山下 健一</title>
+  <meta name="description" content="公開しているアプリの紹介">
+  <link rel="canonical" href="https://ken1yama.github.io/software.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="山下 健一 | Ken-ichi Yamashita">
+  <meta property="og:title" content="Software | 山下 健一">
+  <meta property="og:description" content="公開しているアプリの紹介">
+  <meta property="og:url" content="https://ken1yama.github.io/software.html">
+  <meta property="og:image" content="https://ken1yama.github.io/assets/og.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#15103a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">山下 健一 / Ken-ichi Yamashita</a>
+      <nav><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="gallery.html">Gallery</a><a href="activities.html">Activities</a><a href="cv.html">CV</a><a href="software.html" aria-current="page">Software</a><a href="links.html">Links</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+
+    <h1 class="page-title">Software <span class="en">公開しているアプリ</span></h1>
+    <p>研究の作業を手早くするためのツールを、GitHub で公開しています。ブラウザで使うツールは、インストールが不要で、<strong>読み込んだファイルが外部に送信されることはありません</strong>(処理はすべてブラウザ内で行われます)。画面は日本語と英語を切り替えられます。すべてのリポジトリは <a href="https://github.com/ken1yama?tab=repositories" target="_blank" rel="noopener">GitHub のプロフィール</a>から見られます。</p>
+    <div class="apps">
+      <article class="app">
+        <h2>OT-LCDFT-RCCS</h2>
+        <p>長距離補正(LC)汎関数のパラメーター ω(および α, β)を、J² 値の最小化によって系ごとに最適チューニング(optimal tuning)する Python スクリプトです。分子科学研究所 計算科学研究センター(RCCS)のスーパーコンピューターで、Gaussian 16 のジョブを自動で投入しながら最適化を進めます。ブラウザで使うツールではなく、RCCS 上で実行します。</p>
+        <ul class="feat">
+          <li>中性・カチオン・アニオンの3状態を ΔSCF 法で計算し、J² を最小にするパラメーターを探索します</li>
+          <li>ω のみ、α のみ、ω と α の同時の3つのモードと、5種類の最適化アルゴリズム(Brent 法、黄金分割、グリッド、ベイズ最適化など)</li>
+          <li>最適化全体を1本のジョブで実行し、前回の結果を初期値に使って高速化。中断した計算は途中から再開できます</li>
+          <li>J² 値だけを計算するモードと、OT と構造最適化を整合するまで繰り返すモード</li>
+        </ul>
+        <p class="tags"><span>Gaussian 16</span><span>LC-DFT</span><span>最適チューニング</span><span>RCCS</span><span>Python</span><span>MIT License</span></p>
+        <p class="links">
+          <a class="doi" href="https://github.com/ken1yama/OT-LCDFT-RCCS" target="_blank" rel="noopener">GitHub</a>
+        </p>
+        <p class="muted">Gaussian 16 と RCCS の利用資格が必要です。使い方は GitHub の README を参照してください。</p>
+      </article>
+      <article class="app">
+        <h2>CIF Completer</h2>
+        <p>SHELXL で精密化した CIF に残る <code>?</code> を、測定ソフトが出力したファイルの値で補完し、論文の SI 向けの Word の表を作ります。</p>
+        <ul class="feat">
+          <li>値が <code>?</code> の項目だけを埋め、すでに入っている値は変更しません。どの項目をどのファイルから埋めたかを一覧で示します</li>
+          <li>Rigaku(<code>.cif_od</code>)、Bruker(<code>.pcf</code>。<code>.p4p</code> と <code>.abs</code> は試験的な対応)、他社装置の CIF 形式のファイルを読み込めます</li>
+          <li>補完した内容は画面上で直接編集でき、checkCIF のページへのリンクがあります</li>
+          <li>結晶データ、原子座標、結合長・結合角、異方性変位パラメータなどの表を、Word(.docx)で出力できます</li>
+        </ul>
+        <p class="tags"><span>結晶構造解析</span><span>CIF</span><span>SHELXL</span><span>Word</span><span>MIT License</span></p>
+        <p class="links">
+          <a class="doi" href="https://ken1yama.github.io/cif-completer/" target="_blank" rel="noopener">アプリを開く</a>
+          <a class="doi alt" href="https://github.com/ken1yama/cif-completer" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </article>
+      <article class="app">
+        <h2>Image Resizer (cm / dpi)</h2>
+        <p>画像を切り抜き、印刷サイズ(cm)と解像度(dpi)を指定してリサイズ・保存します。論文の図を、指定の寸法と解像度にそろえる用途に向いています。</p>
+        <ul class="feat">
+          <li>幅・高さ(cm)と解像度(dpi)から、出力の画素数を計算します。PNG と JPEG には dpi を書き込むので、Word や Illustrator で指定の cm サイズとして扱われます</li>
+          <li>リサイズ方式を選べます(図・グラフ・文字向けのエリア平均、写真向けの Lanczos など)</li>
+          <li>切り抜き範囲を全画像に適用する一括処理と、ZIP での保存</li>
+          <li>JPEG、PNG、WebP、GIF、BMP、SVG、TIFF の読み込みと、クリップボードからの貼り付けに対応</li>
+        </ul>
+        <p class="tags"><span>画像処理</span><span>図の作成</span><span>dpi</span><span>MIT License</span></p>
+        <p class="links">
+          <a class="doi" href="https://ken1yama.github.io/image-resizer-cm-dpi/" target="_blank" rel="noopener">アプリを開く</a>
+          <a class="doi alt" href="https://github.com/ken1yama/image-resizer-cm-dpi" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </article>
+      <article class="app">
+        <h2>Gaussian / ORCA Output Parser</h2>
+        <p>Gaussian と ORCA の出力ファイル(<code>.out</code> / <code>.log</code> / <code>.txt</code>)から、ジョブ種別、エネルギー、虚振動の数(NImag)、点群、温度、計算条件を取り出し、1つの表にまとめて CSV に書き出します。</p>
+        <ul class="feat">
+          <li>Gaussian と ORCA を内容から自動で判別。両方を同時に読み込んで、1つの表にまとめられます</li>
+          <li>2件以上を読み込むと、エネルギー差を別の表で表示できます(単位と基準を選択可)</li>
+          <li>SP / Opt / Freq / TD などに対応。不要な列は後から削除でき、CSV にも反映されます</li>
+        </ul>
+        <p class="tags"><span>Gaussian</span><span>ORCA</span><span>CSV</span><span>MIT License</span></p>
+        <p class="links">
+          <a class="doi" href="https://ken1yama.github.io/gaussian-orca-parser/" target="_blank" rel="noopener">アプリを開く</a>
+          <a class="doi alt" href="https://github.com/ken1yama/gaussian-orca-parser" target="_blank" rel="noopener">GitHub</a>
+        </p>
+        <p class="muted">画面の表示に、Tailwind CSS の配信元(CDN)への接続が必要です。解析そのものは、お使いのパソコンの中で行われます。</p>
+      </article>
+      <article class="app">
+        <h2>TDDFT Spectrum Viewer</h2>
+        <p>Gaussian の TDDFT 計算の出力ファイル(<code>.out</code> / <code>.log</code>)を読み込み、遷移テーブルと UV-Vis スペクトルを表示します。GaussSum のような使い方ができます。</p>
+        <ul class="feat">
+          <li>遷移テーブル(エネルギー、波長、振動子強度、対称性、主要な軌道の寄与)</li>
+          <li>スペクトルの表示(ガウス型・ローレンツ型、横軸 nm / eV / 10³ cm⁻¹、半値幅や範囲の調整)</li>
+          <li>遷移テーブル(CSV)、スペクトル図(PNG / SVG)、スペクトルの数値(CSV)の保存</li>
+          <li>開殻(UKS)の出力や、複数ステップのジョブに対応</li>
+        </ul>
+        <p class="tags"><span>Gaussian</span><span>TD-DFT</span><span>UV-Vis</span><span>MIT License</span></p>
+        <p class="links">
+          <a class="doi" href="https://ken1yama.github.io/tddft-spectrum-viewer/" target="_blank" rel="noopener">アプリを開く</a>
+          <a class="doi alt" href="https://github.com/ken1yama/tddft-spectrum-viewer" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </article>
+    </div>
+
+  </main>
+  <footer class="wrap">
+    <small>&copy; 2026 Ken-ichi Yamashita. Last updated: 2026-11-25.</small>
+  </footer>
+  <script>
+  // phone: the menu is one scrolling row; bring the current page's link into view
+  (function () {
+    var c = document.querySelector('.site-header nav [aria-current]'), n = c && c.parentNode;
+    if (n && n.scrollWidth > n.clientWidth) n.scrollLeft = c.offsetLeft - (n.clientWidth - c.offsetWidth) / 2;
+  })();
+  </script>
+</body>
+</html>
