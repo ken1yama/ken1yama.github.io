@@ -35,6 +35,21 @@
     <p>研究の作業を手早くするためのツールを、GitHub で公開しています。ブラウザで使うツールは、インストールが不要で、<strong>読み込んだファイルが外部に送信されることはありません</strong>(処理はすべてブラウザ内で行われます)。画面は日本語と英語を切り替えられます。すべてのリポジトリは <a href="https://github.com/ken1yama?tab=repositories" target="_blank" rel="noopener">GitHub のプロフィール</a>から見られます。</p>
     <div class="apps">
       <article class="app">
+        <h2>Gaussian16 → XYZ Converter &amp; Viewer</h2>
+        <p>Gaussian 16 のインプット・アウトプットファイルから座標を取り出して XYZ 形式に変換し、3D で表示・編集します。</p>
+        <ul class="feat">
+          <li>インプット(<code>.gjf</code> / <code>.com</code>)、アウトプット(<code>.out</code> / <code>.log</code>)、XYZ(<code>.xyz</code>)を読み込めます。アウトプットでは、最後の構造(構造最適化なら最終構造)を取り出し、未収束やエラー終了のときは警告を出します</li>
+          <li>3D 表示(回転・拡大、原子ラベルの切り替え、PNG 保存)。原子をクリックすると、XYZ の該当行が強調されます</li>
+          <li>XYZ のテキストを直接編集して、3D に反映できます。GaussView 5 など、<code>.xyz</code> を開けないソフトのために、GJF 形式でも保存できます</li>
+          <li>ネットワークに接続できない計算機でも使える、1ファイルのオフライン版があります</li>
+        </ul>
+        <p class="tags"><span>Gaussian 16</span><span>XYZ</span><span>3D 表示</span><span>MIT License</span></p>
+        <p class="links">
+          <a class="doi" href="https://ken1yama.github.io/gaussian-xyz-converter/" target="_blank" rel="noopener">アプリを開く</a>
+          <a class="doi alt" href="https://github.com/ken1yama/gaussian-xyz-converter" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </article>
+      <article class="app">
         <h2>OT-LCDFT-RCCS</h2>
         <p>長距離補正(LC)汎関数のパラメーター ω(および α, β)を、J² 値の最小化によって系ごとに最適チューニング(optimal tuning)する Python スクリプトです。分子科学研究所 計算科学研究センター(RCCS)のスーパーコンピューターで、Gaussian 16 のジョブを自動で投入しながら最適化を進めます。ブラウザで使うツールではなく、RCCS 上で実行します。</p>
         <ul class="feat">
@@ -112,7 +127,7 @@
 
   </main>
   <footer class="wrap">
-    <small>&copy; 2026 Ken-ichi Yamashita. Last updated: 2026-11-26.</small>
+    <small>&copy; 2026 Ken-ichi Yamashita. Last updated: 2026-11-27.</small>
   </footer>
   <script>
   // phone: the menu is one scrolling row; bring the current page's link into view
